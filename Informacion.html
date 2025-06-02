@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style2.css">
+    <title>Document</title>
+</head>
+<body class="TemaClaro">
+     <header>
+        <h1>ERP CARRILLO MEDINA</h1>
+    </header>
+    <nav>
+         <div class="BotonMenu">
+            <button onclick="MostrarMenu()"></button>
+            <p>Menu</p>
+        </div>
+        <ul class="Menu">
+            <li><a href="index.html">Acerca De</a></li>
+            <li><a href="#">Info</a></li>
+            <li><a href="Tutorial.html">Descargame AQUI!!!</a></li>
+            <button id="CambioTema" class="CambioTema">☀️</button>
+        </ul>
+    </nav>
+    <script src="./javascript/CambioTema.js"></script>
+    <main>
+        <div class="imagenes1">
+            <h1 class="titulo1">TIPOS DE ERP</h1>
+            <img src="./imagenes/TiposERP.jpg" alt="">
+        </div>
+        <div class="texto1">
+            <p>Alguno de los tipos de ERP que existen son: el tan conocido ERP que como características puede tener la centralización de su trabajo, es decir, reuniendo la información de distintas áreas además de su automatización tan elegante, haciendo que se optimicen procesos internos y errores humanos y la integración que tiene para conectar diferentes departamentos con una mejor comunicación y flujo de trabajo.
+Otro gran opción es el CRM, el cual cuenta con una gestión de clientes muy óptima, permitiendo así organizar y analizar datos sobre el cliente y ventas, una personalización que facilita la estrategia de marketing y un seguimiento, el cual registra interacciones para mejorar la fidelización</p>
+        </div>
+        <div class="texto2">
+           <p>Los beneficios que anotan los ERP, por ejemplo podrían ser la centralización de información, ya que éste permite almacenar y gestionar todos los datos de una empresa en único lugar, el automatización de procesos, ya que así evitas el hacer tareas repetitivas y mejora la eficacia de estas una mejor toma de decisiones, ya que nos proporcionamos los datos en tiempo real y la herramientas de analisis entre muchas otras</p>
+        </div>
+         <div class="imagenes2">
+            <h1 class="titulo2">BEFENECIOS</h1>
+            <img src="./imagenes/beneficios.jpg" alt=""> 
+        </div>
+    </main>
+    <footer>
+        <h1>ERP</h1>
+        <h2>Proyecto de Lenguaje de Marcas</h2>
+        <p>Hecho por Sebastian Carrillo Medina</p>
+    </footer>
+
+
+
+
+     <script>
+        function MostrarMenu() {
+            let menu = document.querySelector(".Menu");
+            menu.classList.toggle("show");
+
+        }
+    </script>
+
+
+</body>
+</html>

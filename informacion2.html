@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style4.css">
+    <title>Document</title>
+</head>
+<body>
+    <body class="TemaMorado">
+    <header>
+        <h1>ERP CARRILLO MEDINA</h1>
+    </header>
+    <nav>
+        <div class="BotonMenu">
+            <p>Menu</p>
+            <button onclick="MostrarMenu()"></button>
+        </div>
+        <ul class="Menu">
+            <li><a href="index.html">Acerca De</a></li>
+            <li><a href="Informacion.html">Info</a></li>
+            <button id="CambioTemaPurpura" class="CambioTemaPrupura">☀️</button>
+        </ul>
+    </nav>
+    <script src="./javascript/CambiaTemaPurpura.js"></script>
+    <main>
+        <div class="contenedores">
+            <div class="info">
+                <h1>Roles y Privilegios</h1>
+                <p>Odoo cuenta con unos roles y unos privilegios, los cuales se pueden dar de forma personalizada o de forma automática dentro del propio ERP además para hacer una buena práctica en la gestión de estos mismos roles, los podremos dividir en tres: la asignación de los permisos necesarios para cada usuario. La auditoría regularmente del acceso para evitar riesgos de seguridad y una autentificador en doble factor</p>
+                <div class="imagenes">
+                     <img src="./imagenes/RolesYPrivilegios.jpg" alt="">
+                </div>
+            </div>
+            <div class="info">
+                <h1>INFORMES</h1>
+                <p>Odoo, a la hora de elaborar informes nos permite una personalización mediante su sistema de reporte integrado, incluyéndonos muchas opciones entre ellas: vistas de lista y gráficos reportes en tipo PDF incluso admite los reportes en Excel permitiendo así exportar datos en formato XLSX para análisis más detallado</p>
+                <div class="imagenes">
+                    <img src="./imagenes/Informes.jpg" alt="">
+                </div>
+            </div>
+            <div class="info">
+                <h1>Exportar Informacion</h1>
+                <p>Otra de las muchas opciones que tiene Odoo es la de exportar la la información desde cualquier módulo, como pueden ser ventas, inventarios, compatibilidad entre muchas otras nos da varias opciones entre ellas, una exportación manual, una exportación masiva, importación y actualización de datos. Entre muchas otras</p>
+                <div class="imagenes">
+                    <img src="./imagenes/Exportar.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </main>
+     <aside>
+        <div class="tutoriales">
+            <h1 class="titulo">PARA WINDOWS</h1>
+            <a href="https://youtu.be/O0mAkJY9wyE"><img src="./imagenes/LogoWindows.jpg" alt="" class="logo1"></a>
+            <h1 class="titulo2">PARA LINUX</h1>
+            
+             <p class="texto">(PROXIMAMENTE...)</p>
+            <a href="#"><img src="./imagenes/LogoLinux.jpg" alt=""></a>
+        </div>
+    </aside>
+    <footer>
+        <h1>ERP</h1>
+        <h2>Proyecto de Lenguaje de Marcas</h2>
+        <p>Hecho por Sebastian Carrillo Medina</p>
+    </footer>
+
+
+
+
+    <script>
+        function MostrarMenu() {
+            let menu = document.querySelector(".Menu");
+            menu.classList.toggle("show");
+
+        }
+    </script>
+</body>
+</html>

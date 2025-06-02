@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body class="TemaClaro">
+    <header>
+        <h1>ERP CARRILLO MEDINA</h1>
+    </header>
+    <nav>
+        <div class="BotonMenu">
+            <button onclick="MostrarMenu()"></button>
+            <p>Menu</p>
+        </div>
+        <ul class="Menu">
+            <li><a href="#">Acerca De</a></li>
+            <li><a href="Informacion.html">Info</a></li>
+            <button id="CambioTema" class="CambioTema">☀️</button>
+        </ul>
+    </nav>
+    <script src="./javascript/CambioTema.js"></script>
+    <aside>
+        <div class="Descarga">
+        <img src="./imagenes/Odoo.jpg" class="imagenes">
+        <p>Como ejemplo a un sistema gestor tenemos odoo y para saber algo mas haz click al boton!!!</p>
+        <ul>
+             <li><a href="Tutorial.html">TUTORAL!!!</a></li>
+        </ul>
+            
+        </div>
+    
+    </aside>
+    <main>
+          <img src="./imagenes/Bienviendia.jpg" alt="">
+          <div class="texto">
+             <p>Su herramienta principal para la administración eficaz de una empresa. Siendo su propósito principal, el integrar distintos procesos internos en una única plataforma, permitiendo así la optimización del trabajo, reducir errores y mejorar la toma de decisiones mediante el acceso a información en tiempo real. Éstos abarcan áreas claves como contabilidad, logística, RRHH y atención al cliente, facilitando así la automatización de tareas y la coordinación entre distintos departamentos</p>
+          </div>
+          <a href="Informacion.html">
+            <button class="saberMas">Saber mas</button>
+          </a>
+    </main>
+    <footer>
+        <h1>ERP</h1>
+        <h2>Proyecto de Lenguaje de Marcas</h2>
+        <p>Hecho por Sebastian Carrillo Medina</p>
+    </footer>
+
+
+    <script>
+        function MostrarMenu() {
+            let menu = document.querySelector(".Menu");
+            menu.classList.toggle("show");
+
+        }
+    </script>
+</body>
+</html>
+
+
+
